@@ -17,4 +17,14 @@
    python3.9 -m venv ../venv
    source ../venv/bin/activate
 
-2.
+2. **Встановлення залежностей**
+    ```bash
+    pip install --upgrade pip
+    pip install -r requirements.txt
+    ```
+3. **Запуск міграцій, заповнення бази даних фікстурами та запуск сервера**
+    ```bash
+    ./manage.py migrate
+    ./manage.py loaddata <path_to_fixture_files>
+    ./manage.py runserver
+    ```
