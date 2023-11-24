@@ -20,11 +20,13 @@ source ../venv/bin/activate
 ```
 
 2. Крок два. Встановлення залежностей
-   Встановіть необхідні залежності, використовуючи: ```bash
+   Встановіть необхідні залежності, використовуючи:
+   ```bash
    pip install --upgrade pip
    pip install -r requirements.txt
    ```
-3. Крок три. Запустити залежності проекта, міграції, заповнити базу даних фікстурами і т.д.:```bash
+4. Крок три. Запустити залежності проекта, міграції, заповнити базу даних фікстурами і т.д.:
+   ```bash
    ./manage.py migrate
    ./manage.py loaddata <path_to_fixture_files>
    ./manage.py runserver
